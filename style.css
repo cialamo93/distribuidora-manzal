@@ -1,0 +1,103 @@
+:root {
+  --vino: #7a1f2b;
+  --vino-oscuro: #5a1520;
+  --crema: #f6efdc;
+  --crema-oscuro: #ebe0c4;
+  --dorado: #b8923a;
+  --texto: #3a2f2a;
+}
+
+body {
+  font-family: 'Lato', Arial, sans-serif;
+  color: var(--texto);
+  background: var(--crema);
+}
+
+h1, h2, h3, h4, h5, .navbar-brand, .titulo-serif {
+  font-family: 'Merriweather', Georgia, serif;
+}
+
+.barra-superior {
+  background: var(--vino-oscuro);
+  color: var(--crema);
+  font-size: .85rem;
+}
+
+.navbar {
+  background: var(--crema) !important;
+  border-bottom: 3px double var(--dorado);
+}
+.navbar-brand { color: var(--vino) !important; font-weight: 700; }
+.navbar-brand img { height: 52px; margin-right: 10px; }
+.nav-link { color: var(--texto) !important; font-weight: 700; }
+.nav-link:hover, .nav-link.active { color: var(--vino) !important; }
+
+.hero {
+  background:
+    linear-gradient(rgba(90, 21, 32, .82), rgba(90, 21, 32, .82)),
+    repeating-linear-gradient(45deg, #6b1a26 0 14px, #5a1520 14px 28px);
+  color: var(--crema);
+  padding: 6rem 0;
+  text-align: center;
+}
+.hero h1 { font-size: 2.8rem; font-weight: 700; }
+.hero p { font-size: 1.2rem; max-width: 640px; margin: 1rem auto 2rem; }
+.hero .ornamento { color: var(--dorado); letter-spacing: .5rem; }
+
+.btn-manzal {
+  background: var(--dorado);
+  color: #fff;
+  border: 2px solid var(--dorado);
+  font-weight: 700;
+  padding: .7rem 2rem;
+  border-radius: 2px;
+}
+.btn-manzal:hover { background: transparent; color: var(--crema); border-color: var(--crema); }
+
+.btn-vino {
+  background: var(--vino);
+  color: #fff;
+  border-radius: 2px;
+  font-weight: 700;
+  padding: .6rem 2rem;
+}
+.btn-vino:hover { background: var(--vino-oscuro); color: #fff; }
+
+section { padding: 4.5rem 0; }
+.titulo-seccion { color: var(--vino); text-align: center; margin-bottom: .5rem; }
+.subrayado {
+  width: 90px; height: 3px; background: var(--dorado);
+  margin: 0 auto 2.5rem;
+}
+
+.sobre-nosotros { background: #fff; }
+.sobre-nosotros blockquote {
+  border-left: 4px solid var(--dorado);
+  padding-left: 1rem;
+  font-style: italic;
+  color: var(--vino);
+}
+
+.tarjeta {
+  background: #fff;
+  border: 1px solid var(--crema-oscuro);
+  border-top: 4px solid var(--vino);
+  padding: 2rem 1.5rem;
+  height: 100%;
+  text-align: center;
+  transition: transform .2s, box-shadow .2s;
+}
+.tarjeta:hover { transform: translateY(-4px); box-shadow: 0 8px 18px rgba(0,0,0,.12); }
+.tarjeta .icono { font-size: 2.4rem; color: var(--dorado); }
+.tarjeta h5 { color: var(--vino); margin: .8rem 0; }
+
+.cifras { background: var(--vino); color: var(--crema); text-align: center; }
+.cifras .numero { font-family: 'Merriweather', serif; font-size: 2.8rem; font-weight: 700; color: var(--dorado); }
+
+.contacto { background: #fff; }
+.form-control { border-radius: 2px; border-color: #cbbf9d; background: #fffdf6; }
+.form-control:focus { border-color: var(--vino); box-shadow: 0 0 0 .2rem rgba(122, 31, 43, .15); }
+
+footer { background: var(--vino-oscuro); color: var(--crema-oscuro); padding: 2.5rem 0 1rem; font-size: .9rem; }
+footer a { color: var(--dorado); text-decoration: none; }
+footer img { height: 60px; }
